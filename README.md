@@ -97,3 +97,21 @@ fathername:  Ramesh
 grandfather:  Suresh
 Note:
 Keep all the attribute value static as  above mention in sample output 1.
+
+
+problem 4:(07-02-2025)  (Shape and Overriding)
+
+Problem statement
+Create a Class Shape having a field shapeType and a function printMyType.
+
+Create another class, Square and Rectangle, which inherits the Shape class and has additional fields length and breadth. Both Square and Rectangle classes will have two functions calculateArea, which will return the object's area, and printMyType, which will print the type of the object.
+
+Inside the main, first create the object of class Square and have a length equal to 5 and call the printMyType then calculateArea method after creating the object of class Rectangle having the length equal to 5 and breadth equal to 4 and again call the printMyType and calculateArea method.
+
+Sample Output 1 :
+square
+25
+rectangle
+20
+Explanation of Sample output 1:
+Firstly we are creating the object of class Square with mentioned length 5 and calling the functions printMyType which output square and then calculateArea which returns 25 and hence printed. Similarly, it is done for the Rectangle class.
