@@ -1,0 +1,71 @@
+#include <bits/stdc++.h> 
+#include<iostream>
+
+using namespace std;
+
+// Create the classes here
+
+class Shape{
+    public:
+    string shapeType;
+Shape(string shapeType){
+    this->shapeType=shapeType;
+}
+
+    void printMyType(){
+        
+        cout<<shapeType<<endl;
+    }
+};
+
+class Square:public Shape{
+    public:
+    int length;
+
+     Square(string shapeType,int length):Shape(shapeType){
+         this->length=length;
+     }
+    
+    void printMyType(){
+        cout<<shapeType<<endl;
+    }
+
+
+    void calculateArea(){    
+        cout<<length*length<<endl;
+    }
+
+};
+
+
+class Rectangle:public Shape{
+    public:
+    int length,breadth;
+
+     Rectangle(string shapeType,int length,int breadth):Shape(shapeType){
+         this->length=length;
+         this->breadth=breadth;
+     }
+    
+    void printMyType(){
+        cout<<shapeType<<endl;
+    }
+
+
+    void calculateArea(){    
+        cout<<length*breadth<<endl;
+    }
+
+};
+
+int main() {
+    Square sq("square",5);
+    sq.printMyType();
+    sq.calculateArea();
+
+    Rectangle rect("rectangle",5,4);
+    rect.printMyType();
+    rect.calculateArea();
+
+    return 0;
+}
